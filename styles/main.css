@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Roboto');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #FF5722   ;
+  --secondary-color: #000000 ;
+  --accent1-color: #FCA287;
+  --accent2-color: #EEEEEE;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Alice";
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #000000;  /* headlines on a white background */ 
+  --headline-color-on-color: #FF5722; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #FCA287; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #000000  ;
+  --nav-link-color: #000000;
+  --nav-background-color: #FCA287;
+  --nav-hover-link-color: #EEEEEE;
+  --nav-hover-background-color: #FF5722;
+}
+
+/**************************************/
+/*    base CSS                   */
+/**************************************/
+* {
+ font-family: Roboto, Helvetica, sans-serif ;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**************************************/
+/*    utility class css               */
+/**************************************/
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-accent1 {
+  color: var(--accent1-color);
+}
+.text-accent2{
+  color: var(--accent2-color);
+}
+.text-white{
+  color: white;
+}
+.text-fade{
+  opacity: .6 ;
+}
+
+.text-fade:hover{
+  opacity: 1 ;
+}
+
+.badge {
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.text-m{
+  font-size: 18px;
+}
+.text-large{
+  font-size: 36px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+h4 {
+  color: var(--primary-color);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--accent2-color);
+    margin: 20px 0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+/**************************************/
+/*  header | main | footer            */
+/**************************************/
+  .page-container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 40px -15px;
+  }
+
+  .logo {
+    height: 50px;
+    margin: 10px 10px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation {
+
+    margin: 10px 10px;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    border-radius: 5px;
+    grid-gap: 5px;
+    align-self: center;
+    color: white;
+
+    font-family: Alice;
+  }
+    
+  .navigation-item {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+    
+  .navigation-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent2-color);
+  }
+    
+  .navigation-item:hover .active,
+  .navigation-item.active {
+    border-bottom: 2px solid var(--accent1-color);
+  }
+
+
+
+
+  .social-group{
+    display: flex;
+    grid-gap: 3px;
+  }
+
+        
+  .social-redirect {
+    margin: 5px 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    height: fit-content;
+    border-radius: 5px;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  footer {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 40px -15px;
+    background-color: var(--accent2-color);
+  }
+
+  footer > p {
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+/**************************************/
+/*    Home WDD 230 page */
+/**************************************/
+
+    .button {
+      margin: 10px 10px;
+      padding: 5px;
+      font-size: 20px;
+      height: fit-content;
+      border-radius: 5px;
+      align-self: center;
+    }
+    
+    .cover {
+      width: 100%;
+      display: inline-flex;
+      height: 75vh;
+      background-size: cover;
+      background-position: center center;
+    }
+    
+    .cover-message-box {
+      background-color: #FCA287BB;
+      width: fit-content;
+      padding: 30px;
+      border-radius: 10px;
+      margin: auto;
+      max-width: 75%;
+    }
+
+
+
+    .flex-listing{
+      display: flex;
+      justify-content: space-around;
+    }
+    .flex-listing > div{
+      width: 25%;
+    }
+    
+    .button-primary {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgb(255, 87, 34);
+      color: rgb(255, 255, 255);
+      font-size: 11px;
+    }
+    
+
+    .horizontal-margin{
+      padding: 5px 16px;
+    }
+
+            .button3{
+          display: inline-block;
+          padding: 12px 24px;
+          vertical-align: middle;
+          overflow: hidden;
+          text-decoration: none;
+          color: white;
+          background-color: var(--secondary-color);
+          text-align: center;
+          cursor: pointer;
+          white-space: nowrap;
+          border:1px solid var(--primary-color);
+        }
+        .button3:hover {
+          color: var(--secondary-color);
+          border:1px solid var(--secondary-color);
+          background-color: var(--primary-color);
+        }
+
+        .button4{
+          display: inline-block;
+          padding: 12px 24px;
+          vertical-align: middle;
+          overflow: hidden;
+          text-decoration: none;
+          color: white;
+          background-color: var(--primary-color);
+          text-align: center;
+          cursor: pointer;
+          white-space: nowrap;
+          border:1px solid var(--secondary-color);
+        }
+        .button4:hover {
+          color: var(--primary-color);
+          border:1px solid var(--primary-color);
+          background-color: var(--secondary-color);
+        }
+
+    .cover-message-box.with-image {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      gap: 8px;
+    }
+
+    .cover-message-box.with-image > .image > img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .cover-message-box.with-image > .image > h3 {
+      text-align: center;
+      margin: 8px 0px;
+    }
+
+    
+    
