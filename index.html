@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUMBA Guy-Jeef - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - TUMBA Guy-Jeef - course assignment portal">
+    <meta name="author" content="TUMBA Guy-Jeef">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="primary">
+        <a href="./index.html">
+          <img src="./images/profile.webp" alt="Guy-Jeef TUMBA profile pic" class="logo">
+        </a>
+        <div class="header-name">
+          <h1 class="text-secondary">TUMBA Guy-Jeef</h1>
+          <div class="social-group">
+            <a class="social-redirect" href="https://www.linkedin.com/in/guy-jeeftumba" target="_blank" >
+              <span>Linkedin</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="cards">
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01: <a href="https://codepen.io/geek-jeef/pen/XWxKeLP" target="_blank" >Codepen Assignment</a></li>
+                    <li>Week 02:<a href=""></a></li>
+                    <li>Week 03:<a href=""></a></li>
+                    <li>Week 04:<a href=""></a></li>
+                    <li>Week 05:<a href=""></a></li>
+                    <li>Week 06:<a href=""></a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <div>
+                    <p id="place"></p>
+                    <p id="temp"></p>
+                    <p>Page Visits: <span id="visits"></span></p>
+                </div>
+            </section>
+        </div>
+      </main>
+    </div>
+    <footer>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+  </body>
+</html>
