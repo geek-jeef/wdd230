@@ -1,0 +1,28 @@
+@media only screen and (min-width: 980px) { 
+  nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .card-container{
+	display: flex;
+  }
+
+  
+
+}

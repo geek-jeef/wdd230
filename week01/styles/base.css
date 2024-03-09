@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Roboto');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #FF5722   ;
+  --secondary-color: #000000 ;
+  --accent1-color: #FCA287;
+  --accent2-color: #EEEEEE;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Alice";
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #000000;  /* headlines on a white background */ 
+  --headline-color-on-color: #FF5722; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #FF5722; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #FCA287; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #000000  ;
+  --nav-link-color: #000000;
+  --nav-background-color: #FCA287;
+  --nav-hover-link-color: #EEEEEE;
+  --nav-hover-background-color: #FF5722;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 10px var(--secondary-color);
+	text-align: center;
+}
+nav a {
+	display: block;
+	text-align: center;
+
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover , nav a.active {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+footer {
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 40px -15px;
+    background-color: var(--secondary-color);
+  }
+  
+  footer > p {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent2-color);
+  }
+  
+  
+  footer > p:last-child {
+    text-align: center;
+    font-weight: normal;
+    color: var(--accent1-color);
+    padding: 5px;
+    margin: 5px;
+    margin-top: -25px;
+  }
+  
+
+  .card-container{
+    display: block;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  .title {
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 12px;
+    margin: 0px ;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
