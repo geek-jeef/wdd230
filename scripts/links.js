@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
             if (response.ok) {
                 const data = await response.json (); 
                 displayLinks (data.weeks);
-                console.log(data.weeks)
             }else {
                 throw Error (await response.text());
             } 
