@@ -10,7 +10,8 @@
             "week":"Week 02",
             "links": [
                 {"title": "Web Design Principles", "url": "week02/design.html"},
-                {"title": "Hamburger Menu", "url": "https://codepen.io/geek-jeef/full/qBwZjdG"}
+                {"title": "Hamburger Menu", "url": "https://codepen.io/geek-jeef/full/qBwZjdG"},
+                {"title": "DOM Manipulation", "url": "week02/bom.html"}
             ]
         }
     ]
