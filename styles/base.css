@@ -165,6 +165,9 @@ header {
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
+
+
+
 header > h1,
 header > h2 {
   color: var(--headline-color-on-color);
@@ -175,6 +178,14 @@ header > .header-name {
     flex-direction: column;
     gap: 1rem;
 }
+
+.header-name .name{
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  font-weight: bold;
+}
+
 .social-group {
   display: flex;
   grid-gap: 3px;
