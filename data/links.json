@@ -1,0 +1,16 @@
+{
+    "weeks": [
+        {
+            "week":"Week 01",
+            "links": [
+                {"title": "The Chamber of Commerce Site Plan", "url": "week01/chamber-site-plan.html"}
+            ]
+        },
+        {
+            "week":"Week 02",
+            "links": [
+                {"title": "Web Design Principles", "url": "week02/design.html"}
+            ]
+        }
+    ]
+}
