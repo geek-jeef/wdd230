@@ -280,3 +280,35 @@ footer > p:last-child {
   margin: 5px;
   margin-top: -25px;
 }
+
+#hamburger::before {
+  content: "≡";
+}
+
+#hamburger.show::before {
+  content: "X";
+}
+
+#hamburger {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+}
+
+.noDisplay {
+  display: none;
+}
+
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}

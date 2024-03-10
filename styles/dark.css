@@ -1,0 +1,111 @@
+html.dark:root {
+    --color-primary-100: #ff5722;
+    --color-primary-200: #ff6d3b;
+    --color-primary-300: #ff8153;
+    --color-primary-400: #ff956b;
+    --color-primary-500: #ffa783;
+    --color-primary-600: #ffb99b;
+
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    --color-surface-700: #cfcfcf;
+    
+    --color-surface-mixed-100: #281a15;
+    --color-surface-mixed-200: #3d2f2a;
+    --color-surface-mixed-300: #534641;
+    --color-surface-mixed-400: #695d59;
+    --color-surface-mixed-500: #807672;
+    --color-surface-mixed-600: #99908d;
+
+
+    --primary-color: var(--color-primary-100);
+    --secondary-color: var(--color-surface-500);
+    --accent1-color: var(--color-primary-600);
+    --accent2-color: var(--color-surface-mixed-100);
+  
+    --headline-color-on-white: var(--color-surface-700); /* headlines on a dark background */
+    --headline-color-on-color: var(--color-surface-mixed-100); /* headlines on a colored dark background */
+    --paragraph-color-on-white: var(--color-primary-600); /* paragraph text on a dark background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored dark background */
+    --paragraph-background-color: var(--color-surface-500);
+  
+    --nav-link-color: white;
+    --nav-background-color: var(--color-surface-mixed-200);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #ff5722;
+
+    color: var(--color-surface-700);
+    background-color: var(--color-surface-300);
+}
+
+
+html.dark body {
+    background-color: var(--color-surface-400);
+}
+
+html.dark .text-white {
+  color: var(--color-primary-200);
+}
+
+/**************************************/
+/*  header | nav | main | footer      */
+/**************************************/
+
+
+html.dark .text-secondary {
+    color: white;
+}
+
+html.dark .page-container {
+  box-shadow: rgba(255, 255, 255, 0.20) 0px 5px 40px -15px;
+}
+
+html.dark .logo {
+  box-shadow: rgba(255, 255, 255, 0.20) 0px 5px 20px -10px;
+}
+
+html.dark header {
+    color: var(--headline-color-on-color);
+    background-color: var(--color-primary-100);
+}
+
+html.dark #weeks-content a:visited {
+    color: var(--color-primary-600);
+}
+
+html.dark nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+html.dark nav a.active:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--nav-hover-link-color) !important;
+}
+
+html.dark main {
+  background-image: url('../images/bg_dark.jpg');
+}
+
+html.dark main h1 {
+  background-color: #3d2f2abb;
+}
+
+html.dark .card {
+  background-color: #3d2f2abb;
+}
+
+html.dark footer {
+    background-color: var(--color-surface-mixed-100);
+}
+
+html.dark footer > p {
+    color: white;
+}
+
+html.dark footer > p:last-child {
+    color: var(--accent1-color);
+}
