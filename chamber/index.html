@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page - Lomé Chamber of Commerce</title>
+  <meta name="description" content="WDD 230 - Web Frontend Development I - TUMBA Guy-Jeef - Lomé Chamber of commerce">
+  <meta name="author" content="TUMBA Guy-Jeef">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+  <link type="text/css" rel="stylesheet" href="styles/base.css">
+  <link type="text/css" rel="stylesheet" href="styles/larger.css">
+  <link type="text/css" rel="stylesheet" href="styles/dark.css">
+
+  <meta property="og:title" content="Lomé Chamber of commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://www.togofirst.com/media/k2/items/cache/5e57f8823b95aa70ef2b731fe090153f_L.jpg">
+  <meta property="og:url" content="https://geek-jeef.github.io/wdd230/chamber">
+
+  <link rel="preload" as="image" href="images/lome.avif" />
+  <link rel="preload" as="image" href="images/spotlights.avif" />
+
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header primary">
+      <a href="./index.html">
+        <img src="./images/logo-white.png" alt="Lomé Chamber of commerce Logo" class="logo">
+      </a>
+      <div class="header-name">
+        <span class="text-secondary name">Lomé Chamber of commerce</span>
+      </div>
+      <div class="header-action">
+        <div class="social-group">
+          <a class="social-redirect text-accent-1 secondary" href="https://www.linkedin.com/in/guy-jeeftumba"
+            target="_blank"> <i class="fa fa-facebook"></i>  </a>
+          <a class="social-redirect text-accent-1 secondary" href="https://www.linkedin.com/in/guy-jeeftumba"
+            target="_blank"> <i class="fa fa-linkedin"></i></a>
+        </div>
+        <div id="mode">🌙</div>
+        <a id="hamburger" class=" text-accent-1 secondary" href="#"></a>
+      </div>
+    </header>
+    <nav class="navigation-hidden">
+      <ul>
+        <li><a href="../chamber/index.html" class="active"> <i class="fa fa-map-marker"></i> Home</a></li>
+        <li><a href="../chamber/discover.html"><i class="fa fa-map-marker"></i> Discover</a></li>
+        <li><a href="../chamber/directory.html"><i class="fa fa-map-marker"></i> Directory</a></li>
+        <li><a href="../chamber/join.html"><i class="fa fa-map-marker"></i> Join</a></li>
+      </ul>
+    </nav>
+    <main>
+
+      <section class="parallax hero">
+        <div class="content">
+          <h1>Lomé Chamber of commerce</h1>
+          <p>Welcome to Lomé Chamber of Commerce, where we fuel the fire of business success! Our vibrant community is
+            dedicated to turbocharging economic growth and prosperity in our region.</p>
+          <div class=""><a href="../chamber/join.html" class="text-secondary">Join us</a></div>
+        </div>
+      </section>
+
+      <section class="events">
+        <h2 class="text-white">Events</h2>
+        <div class="cards">
+          <div>
+            <a href="" class="card">
+              <img src="images/event.avif" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">BoostCamp Business Workshop</h3>
+                    <span class="card__date">March 22, 2024</span>
+                  </div>
+                </div>
+                <p class="card__description">Gear up for success with expert insights and hands-on strategies at our
+                  high-energy BoostCamp workshop. Elevate your business game!</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="" class="card">
+              <img src="images/event.avif" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Innovation Summit 2024</h3>
+                    <span class="card__date">April 5, 2024 </span>
+                  </div>
+                </div>
+                <p class="card__description">
+                  Join visionaries and trailblazers at our Innovation Summit to explore cutting-edge trends and spark
+                  creativity. Be part of the future!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="" class="card">
+              <img src="images/event.avif" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Mega Expo</h3>
+                    <span class="card__date">April 20, 2024</span>
+                  </div>
+                </div>
+                <p class="card__description">
+                  Showcase your brand and connect with a powerhouse of opportunities. Don't miss out!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="parallax spotlights">
+        <div class="item">
+          <div class="img img-first"></div>
+          <div class="card">
+            <h3>spotlights1</h3>
+            <p>#1</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img img-second"></div>
+          <div class="card">
+            <h3>spotlights2</h3>
+            <p>#3</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img img-third"></div>
+          <div class="card">
+            <h3>spotlights3</h3>
+            <p>#3</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="location-weather">
+        <div class="location">
+          <div class="google-map">
+            <iframe frameborder="0" style="border:0" title="google map"
+              src="https://www.google.com/maps/embed/v1/place?key&#x3D;AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&amp;q&#x3D;%20Togo"
+              allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="weather-wrapper">
+          <div class="weather">
+            <div class='main'>
+              <img id="weather_code_image" class='weatherImage' src="" alt="weather_code_image" />
+              <h2 id="weather_code_description">Weather</h2>
+              <div class='weather_info'>
+                <div class="temp">
+                  <h3 id="weather_temp"></h3>
+                </div>
+                <div class="precipitation">
+                  <h3 id="weather_precipitation_probability"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+  <footer>
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
