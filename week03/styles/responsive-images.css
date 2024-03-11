@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+    background-color: rgba(187, 241, 243, 0.385);
+    text-align: center;
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
