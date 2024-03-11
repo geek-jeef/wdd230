@@ -13,6 +13,15 @@
                 {"title": "Hamburger Menu", "url": "https://codepen.io/geek-jeef/full/qBwZjdG"},
                 {"title": "DOM Manipulation", "url": "week02/bom.html"}
             ]
+        },
+        {
+            "week":"Week 3",
+            "links": [
+                {"title": "WebP", "url": "week03/images/landscape.webp"},
+                {"title": "LazyLoad", "url": "week03/lazyload.html"},
+                {"title": "Responsive Images", "url": "week03/responsive-images.html"},
+                {"title": "localStorage", "url": "week03/bom.html"}
+              ]
         }
     ]
 }
