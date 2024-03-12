@@ -4,7 +4,7 @@ const footer = document.getElementsByTagName("footer")[0];
 let yearParagraph = document.createElement("p");
 yearParagraph.textContent = `© ${currentYear} | TUMBA Guy-Jeef | Lomé, TOGO`;
 let lastUpdated = document.createElement("p");
-lastUpdated.setAttribute("id","lastModified");
+lastUpdated.setAttribute("id", "lastModified");
 lastUpdated.textContent = `Last Updated : ${document.lastModified}`;
 
 footer.appendChild(yearParagraph);
@@ -17,7 +17,7 @@ const navbar = document.querySelector('nav');
 hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
-    navbar.classList.toggle('noDisplay');
+	navbar.classList.toggle('noDisplay');
 });
 
 const modeButton = document.querySelector("#mode");
@@ -25,10 +25,23 @@ const html = document.querySelector("html");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🌙")) {
-        html.classList.toggle('dark');
+		html.classList.toggle('dark');
 		modeButton.textContent = "☀️";
 	} else {
 		html.classList.toggle('dark');
 		modeButton.textContent = "🌙";
 	}
 });
+
+
+
+// Visits
+const visitsDisplay = document.querySelector("#visits");
+let totalVisits = Number(window.localStorage.getItem("totalVisitsStored")) || 0;
+if (totalVisits !== 0) {
+	visitsDisplay.textContent = " " + totalVisits;
+} else {
+	visitsDisplay.textContent = ` This is your first visit`;
+}
+totalVisits++;
+localStorage.setItem("totalVisitsStored", totalVisits);

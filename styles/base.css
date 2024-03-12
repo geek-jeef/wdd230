@@ -244,7 +244,7 @@ nav a.active:hover {
 }
 
 main {
-  background-image: url('../images/bg.jpg');
+  background-image: url('../images/bg.webp');
   padding: 1rem;
   min-height: 50vh;
 }
@@ -322,4 +322,34 @@ footer > p:last-child {
   cursor: pointer;
   font-size: 2rem;
   color: white;
+}
+
+.hero {
+  position: relative;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero span {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-size: 1.5em;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.map {
+  margin: 1rem -1rem -1rem -1rem;
+  width: calc(100% + 2rem);
+  margin-bottom: calc(-1rem - 5px);
+  height: 40vh;
+  background-color: var(--accent1-color);
 }

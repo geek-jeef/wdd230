@@ -87,7 +87,7 @@ html.dark nav a.active:hover {
 }
 
 html.dark main {
-  background-image: url('../images/bg_dark.jpg');
+  background-image: url('../images/bg_dark.webp');
 }
 
 html.dark main h1 {
