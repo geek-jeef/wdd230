@@ -15,6 +15,9 @@
   --paragraph-color-on-color: #fca287; /* paragraph text on a colored background */
   --paragraph-background-color: #000000;
 
+  --black: #000000;
+  --white: #000000;
+
   --nav-link-color: #000000;
   --nav-background-color: #fca287;
   --nav-hover-link-color: #eeeeee;
@@ -30,6 +33,10 @@ body {
   max-width: 768px;
   margin: auto;
   padding: 10px;
+}
+
+.sr-only{
+  display: none;
 }
 
 img {
@@ -318,10 +325,14 @@ footer > p:last-child {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
   cursor: pointer;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.5rem;
+  background-color: #00000066;
+  border-radius: 100%;
+  padding: 0.25rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
 }
 
 .hero {
@@ -340,7 +351,7 @@ footer > p:last-child {
   top: 5%;
   font-size: 1.5em;
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: var(--black);
   border-radius: 5px;
   padding: 5px;
 }
