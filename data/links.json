@@ -22,6 +22,15 @@
                 {"title": "Responsive Images", "url": "week03/responsive-images.html"},
                 {"title": "localStorage", "url": "week03/bom.html"}
               ]
+        },
+        {
+            "week":"Week 4",
+            "links": [
+                {"title": "Pseudo-Classes", "url": "https://codepen.io/geek-jeef/full/JjVrqNL"},
+                {"title": "CSS-Combinations", "url": "images/css-conbinations-practice.png"},
+                {"title": "Table", "url": "week04/tablebuild.html"},
+                {"title": "Form", "url": "week04/index.html"}
+              ]
         }
     ]
 }
