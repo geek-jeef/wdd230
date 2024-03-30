@@ -1,0 +1,23 @@
+{
+    "familyName": "Gnassounou-Akpah",
+    "dateOfMove": "02-02-2024",
+    "nPeople": 3,
+    "bishopricVisited": true,
+    "members": [
+        {
+        "name": "Licien Gnassounou-Akpah",
+        "gender": "m",
+        "dateOfBirth": "01-05-1990"
+        },
+        {
+        "name": "Tatiana Gnassounou-Akpah",
+        "gender": "f",
+        "dateOfBirth": "09-25-1994"
+        },
+        {
+        "name": "Ornella Gnassounou-Akpah",
+        "gender": "f",
+        "dateOfBirth": "03-05-2021"
+        }                                                                               
+    ]
+}

@@ -31,6 +31,15 @@
                 {"title": "Table", "url": "week04/tablebuild.html"},
                 {"title": "Form", "url": "week04/index.html"}
               ]
+        },
+        {
+            "week":"Week 5",
+            "links": [
+                {"title": "CSS Pseudo-elements", "url": "https://codepen.io/geek-jeef/full/oNOGRVm"},
+                {"title": "JSon Test", "url": "week05/new-ward-members.json"},
+                {"title": "Prophets List", "url": "week05/prophets.html"},
+                {"title": "Weather", "url": "week05/weather.html"}
+              ]
         }
     ]
 }
