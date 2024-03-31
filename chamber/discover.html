@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Page - Lomé Chamber of Commerce</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development I - TUMBA Guy-Jeef - Lomé Chamber of Commerce Discover Page">
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development I - TUMBA Guy-Jeef - Lomé Chamber of Commerce Discover Page">
     <meta name="author" content="TUMBA Guy-Jeef">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -22,7 +23,7 @@
     <meta property="og:image"
         content="https://www.togofirst.com/media/k2/items/cache/5e57f8823b95aa70ef2b731fe090153f_L.jpg">
     <meta property="og:url" content="https://geek-jeef.github.io/wdd230/chamber">
-    <link rel="preload" as="image" href="images/lome.avif" >
+    <link rel="preload" as="image" href="images/lome.avif">
 </head>
 
 <body class="discover-page">
@@ -123,59 +124,72 @@
                     <div class="chamber-info">
                         <h2>Statistical Graphs</h2>
                         <div class="Statistical-graphs">
-                            <div class='percentages' style="--percentage: 42; --color: fuchsia">
+                            <div class='percentages' style="--percentage: 42;">
                                 <h3>Exportations</h3>
-                                <svg width="150" height="150">
-                                    <circle fill="none" stroke-width="20" stroke="var(--headline-color-on-white-80)" r="65" cx="50%" cy="50%" pathlength="100" />
-                                    <circle fill="none" stroke-width="20" stroke="var(--primary-color)" r="65" cx="50%" cy="50%" pathlength="100" stroke-dasharray="var(--percentage) 100" />
+                                <svg viewBox="0 0 36 36" width="180" height="180" class="circular-chart">
+                                    <path class="circle-bg" fill="none" stroke-width="4" stroke="var(--headline-color-on-white-80)" d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" fill="none" stroke-width="4" stroke="var(--primary-color)" stroke-dasharray="var(--percentage), 100" d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="percentage" fill="var(--secondary-color)" font-size="0.5em" text-anchor="middle">42%</text>
                                 </svg>
-                                <span>42%</span>
                             </div>
-                            <div class='percentages' style="--percentage: 75; --color: forestgreen">
+                            <div class='percentages' style="--percentage: 75;">
                                 <h3>Profitability</h3>
-                                <svg width="150" height="150">
-                                    <circle fill="none" stroke-width="20" stroke="var(--headline-color-on-white-80)" r="65" cx="50%" cy="50%" pathlength="100" />
-                                    <circle fill="none" stroke-width="20" stroke="var(--primary-color)" r="65" cx="50%" cy="50%" pathlength="100" stroke-dasharray="var(--percentage) 100" />
+                                <svg viewBox="0 0 36 36" width="180" height="180" class="circular-chart">
+                                    <path class="circle-bg" fill="none" stroke-width="4" stroke="var(--headline-color-on-white-80)" d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" fill="none" stroke-width="4" stroke="var(--primary-color)" stroke-dasharray="var(--percentage), 100" d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="percentage" fill="var(--secondary-color)" font-size="0.5em" text-anchor="middle">75%</text>
                                 </svg>
-                                <span>75%</span>
                             </div>
-                            <div class='percentages' style="--percentage: 5; --color: forestgreen">
+                            <div class='percentages' style="--percentage: 5;">
                                 <h3>losses</h3>
-                                <svg width="150" height="150">
-                                    <circle fill="none" stroke-width="20" stroke="var(--headline-color-on-white-80)" r="65" cx="50%" cy="50%" pathlength="100" />
-                                    <circle fill="none" stroke-width="20" stroke="var(--primary-color)" r="65" cx="50%" cy="50%" pathlength="100" stroke-dasharray="var(--percentage) 100" />
+                                <svg viewBox="0 0 36 36" width="180" height="180" class="circular-chart">
+                                    <path class="circle-bg" fill="none" stroke-width="4" stroke="var(--headline-color-on-white-80)" d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" fill="none" stroke-width="4" stroke="var(--primary-color)" stroke-dasharray="var(--percentage), 100" d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="percentage" fill="var(--secondary-color)" font-size="0.5em" text-anchor="middle">5%</text>
                                 </svg>
-                                <span>5%</span>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="chamber-info">
                         <h2>Our Entrepreneurs</h2>
 
                         <div class="chart">
-                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-1.webp" alt="" width="300" height="150"
-                                loading="lazy">
+                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-1.webp" alt="" width="300"
+                                height="150" loading="lazy">
                         </div>
 
                         <div class="chart">
-                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-2.webp" alt="" width="300" height="150"
-                                loading="lazy">
+                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-2.webp" alt="" width="300"
+                                height="150" loading="lazy">
                         </div>
                         <div class="chart">
-                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-3.webp" alt="" width="300" height="150"
-                                loading="lazy">
+                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-3.webp" alt="" width="300"
+                                height="150" loading="lazy">
                         </div>
                         <div class="chart">
-                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-4.webp" alt="" width="300" height="150"
-                                loading="lazy">
+                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-4.webp" alt="" width="300"
+                                height="150" loading="lazy">
                         </div>
                         <div class="chart">
-                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-5.webp" alt="" width="300" height="150"
-                                loading="lazy">
+                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-5.webp" alt="" width="300"
+                                height="150" loading="lazy">
                         </div>
                         <div class="chart">
-                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-6.webp" alt="" width="300" height="150"
-                                loading="lazy">
+                            <img class="entrep-img" src="images/entrepreneur/entrepreneur-6.webp" alt="" width="300"
+                                height="150" loading="lazy">
                         </div>
                     </div>
                 </aside>
@@ -184,11 +198,13 @@
                     <div class="discover-card">
                         <picture>
                             <source srcset="images/discover/City-small.webp" media="(max-width: 500px)">
-                            <img class="discover-card-img" data-src="images/discover/City-large.webp" src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
+                            <img class="discover-card-img" data-src="images/discover/City-large.webp"
+                                src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
                                 alt="Vibrant, developing cityscape representing our community's top 3 regional growth.">
                         </picture>
                         <div class="discover-card-text-wrapper">
-                            <div class="discover-card-text">Explore the vibrant panorama of our city, which stands out among the top
+                            <div class="discover-card-text">Explore the vibrant panorama of our city, which stands out
+                                among the top
                                 three in growth throughout the region, reflecting the dynamism and vitality of our
                                 community.</div>
                         </div>
@@ -196,56 +212,65 @@
                     <div class="discover-card">
                         <picture>
                             <source srcset="images/discover/Build-small.webp" media="(max-width: 500px)">
-                            <img class="discover-card-img" data-src="images/discover/Build-large.webp" src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
+                            <img class="discover-card-img" data-src="images/discover/Build-large.webp"
+                                src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
                                 alt="Modern, accessible building equipped with cutting-edge technology for visitor comfort and accessibility.">
                         </picture>
                         <div class="discover-card-text-wrapper">
-                            <div class="discover-card-text">Discover an innovative and comfortable space that incorporates high
+                            <div class="discover-card-text">Discover an innovative and comfortable space that
+                                incorporates high
                                 technology to ensure easy access and a rewarding experience for all our visitors.</div>
                         </div>
                     </div>
                     <div class="discover-card">
                         <picture>
                             <source srcset="images/discover/Staff-small.webp" media="(max-width: 500px)">
-                            <img class="discover-card-img" data-src="images/discover/Staff-large.webp" src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
+                            <img class="discover-card-img" data-src="images/discover/Staff-large.webp"
+                                src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
                                 alt="Confident, well-dressed executives symbolizing our highly skilled professional team.">
                         </picture>
                         <div class="discover-card-text-wrapper">
-                            <div class="discover-card-text">We have a team of dedicated and self-assured experts ready to advise and
+                            <div class="discover-card-text">We have a team of dedicated and self-assured experts ready
+                                to advise and
                                 guide you free of charge in your needs and challenges.</div>
                         </div>
                     </div>
                     <div class="discover-card">
                         <picture>
                             <source srcset="images/discover/Meeting-small.webp" media="(max-width: 500px)">
-                            <img class="discover-card-img" data-src="images/discover/Meeting-large.webp" src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
+                            <img class="discover-card-img" data-src="images/discover/Meeting-large.webp"
+                                src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
                                 alt="Engaging seminar scene illustrating our commitment to keeping members updated and educated.">
                         </picture>
                         <div class="discover-card-text-wrapper">
-                            <div class="discover-card-text"> We offer talks, training sessions, and more in our spacious facilities,
+                            <div class="discover-card-text"> We offer talks, training sessions, and more in our spacious
+                                facilities,
                                 prioritizing the growth and development of our members.</div>
                         </div>
                     </div>
                     <div class="discover-card">
                         <picture>
                             <source srcset="images/discover/Mrathon-small.webp" media="(max-width: 500px)">
-                            <img class="discover-card-img" data-src="images/discover/Mrathon-large.webp" src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
+                            <img class="discover-card-img" data-src="images/discover/Mrathon-large.webp"
+                                src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
                                 alt="Active community involvement shown through a marathon event, promoting health and sports.">
                         </picture>
                         <div class="discover-card-text-wrapper">
-                            <div class="discover-card-text">We organize various sports and recreational activities to promote an
+                            <div class="discover-card-text">We organize various sports and recreational activities to
+                                promote an
                                 active and healthy lifestyle in our community.</div>
                         </div>
                     </div>
                     <div class="discover-card">
                         <picture>
                             <source srcset="images/discover/Community-Service-small.webp" media="(max-width: 500px)">
-                            <img class="discover-card-img" data-src="images/discover/Community-Service-large.webp" src="https://placehold.co/600x300" loading="lazy"
-                                width="600" height="300"
+                            <img class="discover-card-img" data-src="images/discover/Community-Service-large.webp"
+                                src="https://placehold.co/600x300" loading="lazy" width="600" height="300"
                                 alt="Youthful community service demonstration, reflecting our dedication to community welfare and respect.">
                         </picture>
                         <div class="discover-card-text-wrapper">
-                            <div class="discover-card-text">We are committed to service and respect for our community, carrying out
+                            <div class="discover-card-text">We are committed to service and respect for our community,
+                                carrying out
                                 campaigns and activities that contribute to the overall well-being.</div>
                         </div>
                     </div>
