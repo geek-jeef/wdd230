@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Us - Lomé Chamber of Commerce</title>
+  <title>Home Page - Lomé Chamber of Commerce</title>
   <meta name="description" content="WDD 230 - Web Frontend Development I - TUMBA Guy-Jeef - Lomé Chamber of commerce">
   <meta name="author" content="TUMBA Guy-Jeef">
   <link rel="icon" href="favicon.ico">
@@ -23,7 +23,7 @@
   <link rel="preload" as="image" href="images/lome.avif" >
 </head>
 
-<body class="join">
+<body>
   <div class="page-container">
     <header class="header primary">
       <a href="./index.html">
@@ -47,51 +47,30 @@
       <ul>
         <li><a href="../chamber/index.html" > <i class="fa fa-map-marker"></i> Home</a></li>
         <li><a href="../chamber/discover.html"><i class="fa fa-map-marker"></i> Discover</a></li>
-        <li><a href="../chamber/directory.html"><i class="fa fa-map-marker"></i> Directory</a></li>
-        <li><a href="../chamber/join.html" class="active"><i class="fa fa-map-marker"></i> Join</a></li>
+        <li><a href="../chamber/directory.html" class="active"><i class="fa fa-map-marker"></i> Directory</a></li>
+        <li><a href="../chamber/join.html"><i class="fa fa-map-marker"></i> Join</a></li>
       </ul>
     </nav>
     <main>
       <section class="parallax hero">
         <div class="content">
-          <h1> Join the Lomé Chamber of Commerce <br>Uniting Business and Community</h1>
-          <div class=""><a href="#form" class="text-secondary">Join us</a></div>
+          <h1>Lomé Chamber of Commerce</h1>
+          <h2>Connecting Business and Community</h2>
+          <div class=""><a href="join.html" class="text-secondary">Join us</a></div>
         </div>
       </section>
-      <section id="form" class="form">
-        <div class="form-style">
-            <h1>Join Up Now!<span> Join us now and enjoy the benefits of our community!</span></h1>
-            <form action="thanks.html" method="get">
-                <div class="section">Personal Information</div>
-                <div class="inner-wrap">
-                    <label for="fname">First Name* <input type="text" name="fname" id="fname" title="Please enter your first name" required></label>
-                    <label for="lname">Last  Name* <input type="text" name="lname" id="lname" title="Please enter your last name" required></label>
-                    <label for="position">Title / Position <input type="text" name="position" id="position" title="Please enter at least 7 alphabetic characters, hyphens, and spaces only" pattern="[a-zA-Z\s\-]{7,}"></label>
-                </div>
-                <div class="section">Contact Details</div>
-                <div class="inner-wrap">
-                    <label for="email">Email* <input type="email" name="email" id="email" title="Please enter a valid email address" placeholder="someemail@email.com" required></label>
-                    <label for="pnumber">Phone Number* <input type="tel" name="pnumber" id="pnumber" title="Please enter a phone number" required></label>
-                </div>
-                <div class="section">Business/Organization Information</div>
-                <div class="inner-wrap">
-                    <label for="org">Business/Organization's Name* <input type="text" name="org" id="org" title="Please enter your business/organization's name" required></label>
-                    <label for="orgdesc">Business/Organization's Description <textarea name="orgdesc" id="orgdesc" title="Please enter your business/organization's description"></textarea></label>
-                </div>
-                <div class="section">Membership Level</div>
-                <div class="inner-wrap">
-                    <label class="sbs"><input type="radio" name="membership" id="np" value="np">NP (for non-profit organizations and there is no fee)</label>
-                    <label class="sbs"><input type="radio" name="membership" id="bronze" value="bronze">Bronze </label>
-                    <label class="sbs"><input type="radio" name="membership" id="silver" value="silver">Silver </label>
-                    <label class="sbs"><input type="radio" name="membership" id="gold" value="golden">Gold </label>
-                </div>
-
-                <input type="hidden" id="timestampField" name="timestampField">
-
-                <input id="btn" type="submit" name="Join Us" value="Join Us" >
-            </form>
+      <div class="directory">
+        <span class="list" style="display: none;"></span>
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📋 List</button>
         </div>
-      </section>
+        <section>
+          <h2>Directory</h2>
+            <div id="members-container" class="grid"></div>
+
+        </section>        
+      </div>
     </main>
   </div>
   <footer>
@@ -130,9 +109,8 @@
     </div>
   </footer>
   <script src="scripts/app.js"></script>
-  <script src="scripts/form.js"></script>
+  <script src="scripts/members.js"></script>
   <script src="scripts/memberspro.js"></script>
-
 </body>
 
 </html>

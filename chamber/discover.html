@@ -22,6 +22,7 @@
     <meta property="og:image"
         content="https://www.togofirst.com/media/k2/items/cache/5e57f8823b95aa70ef2b731fe090153f_L.jpg">
     <meta property="og:url" content="https://geek-jeef.github.io/wdd230/chamber">
+    <link rel="preload" as="image" href="images/lome.avif" >
 </head>
 
 <body class="discover-page">
@@ -125,24 +126,24 @@
                             <div class='percentages' style="--percentage: 42; --color: fuchsia">
                                 <h3>Exportations</h3>
                                 <svg width="150" height="150">
-                                    <circle r="65" cx="50%" cy="50%" pathlength="100" />
-                                    <circle r="65" cx="50%" cy="50%" pathlength="100" />
+                                    <circle fill="none" stroke-width="20" stroke="var(--headline-color-on-white-80)" r="65" cx="50%" cy="50%" pathlength="100" />
+                                    <circle fill="none" stroke-width="20" stroke="var(--primary-color)" r="65" cx="50%" cy="50%" pathlength="100" stroke-dasharray="var(--percentage) 100" />
                                 </svg>
                                 <span>42%</span>
                             </div>
                             <div class='percentages' style="--percentage: 75; --color: forestgreen">
                                 <h3>Profitability</h3>
                                 <svg width="150" height="150">
-                                    <circle r="65" cx="50%" cy="50%" pathlength="100" />
-                                    <circle r="65" cx="50%" cy="50%" pathlength="100" />
+                                    <circle fill="none" stroke-width="20" stroke="var(--headline-color-on-white-80)" r="65" cx="50%" cy="50%" pathlength="100" />
+                                    <circle fill="none" stroke-width="20" stroke="var(--primary-color)" r="65" cx="50%" cy="50%" pathlength="100" stroke-dasharray="var(--percentage) 100" />
                                 </svg>
                                 <span>75%</span>
                             </div>
                             <div class='percentages' style="--percentage: 5; --color: forestgreen">
                                 <h3>losses</h3>
                                 <svg width="150" height="150">
-                                    <circle r="65" cx="50%" cy="50%" pathlength="100" />
-                                    <circle r="65" cx="50%" cy="50%" pathlength="100" />
+                                    <circle fill="none" stroke-width="20" stroke="var(--headline-color-on-white-80)" r="65" cx="50%" cy="50%" pathlength="100" />
+                                    <circle fill="none" stroke-width="20" stroke="var(--primary-color)" r="65" cx="50%" cy="50%" pathlength="100" stroke-dasharray="var(--percentage) 100" />
                                 </svg>
                                 <span>5%</span>
                             </div>
@@ -268,9 +269,9 @@
         <section id="other">
             <h5>Distinguished members</h5>
             <ul>
-                <li id="m1"> member #1</li>
-                <li id="m2"> member #2</li>
-                <li id="m3"> member #3</li>
+                <li id="m1"></li>
+                <li id="m2"></li>
+                <li id="m3"></li>
             </ul>
         </section>
         <section id="media">
@@ -288,6 +289,8 @@
         </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/memberspro.js"></script>
+
 </body>
 
 </html>
