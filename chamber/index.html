@@ -25,6 +25,14 @@
 </head>
 
 <body>
+  <section class="banner-section" style="display: none;">
+    <a href="https://zoom.us/" target="_blank" class="banner banner-top">
+      <h4 class="banner-title">Meet and Greet</h4>
+      <p class="banner-desc">Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+      <span class="banner-btn">Join</span>
+    </a>
+    <button id="closeBanner" class="banner-close" >❌</button>
+  </section>
   <div class="page-container">
     <header class="header primary">
       <a href="./index.html">
@@ -114,28 +122,31 @@
         </div>
       </section>
       <section class="parallax spotlights">
+        <div class="item personas">
+          <h2>Personas</h2>
+        </div>
         <div class="item">
           <div class="img img-first"></div>
           <div class="card">
-            <h3>spotlights1</h3>
-            <p>#1</p>
-            <a href="#">Learn more</a>
+            <h3>Nathalie Manzinèwè <br> BITHO</h3>
+            <p>President</p>
+            <a href="https://www.linkedin.com/feed/" target="_blank">Learn more</a>
           </div>
         </div>
         <div class="item">
           <div class="img img-second"></div>
           <div class="card">
-            <h3>spotlights2</h3>
-            <p>#3</p>
-            <a href="#">Learn more</a>
+            <h3>Clément Mawuli <br> AHIALEY</h3>
+            <p>1st Vice-President</p>
+            <a href="https://www.linkedin.com/feed/" target="_blank">Learn more</a>
           </div>
         </div>
         <div class="item">
           <div class="img img-third"></div>
           <div class="card">
-            <h3>spotlights3</h3>
-            <p>#3</p>
-            <a href="#">Learn more</a>
+            <h3>Samuel Tiboléb <br> SANWOGOU</h3>
+            <p>2nd Vice-President</p>
+            <a href="https://www.linkedin.com/feed/" target="_blank">Learn more</a>
           </div>
         </div>
       </section>
@@ -148,10 +159,14 @@
           </div>
         </div>
         <div class="weather-wrapper">
-          <div class="weather">
-            <div class='main'>
+          
+          
+
+          <div class="weather today">
+            <div class="main">
+              <h2>Today</h2>
               <img id="weather_code_image" class='weatherImage' src="./images/sun.png" alt="weather code image" >
-              <h2 id="weather_code_description">Weather</h2>
+              <h3 class="text-center" id="weather_code_description">Weather</h3>
               <div class='weather_info'>
                 <div class="temp">
                   <h3 id="weather_temp">°C</h3>
@@ -162,10 +177,47 @@
               </div>
             </div>
           </div>
+          <div id="forecast-0" class="weather forecast day+1">
+            <div class="main">
+              <h4 class="forecast-date">Day 1</h4>
+              <div class="info">
+                <img class='weather_code_image' width="45" height="45" src="./images/sun.png" alt="weather code image" >
+                <h5 class="text-center weather_code_description">Weather</h5>
+                <div class="temp">
+                  <h3 class="weather_temp">°C</h3>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div id="forecast-1" class="weather forecast day+2">
+            <div class="main">
+              <h4 class="forecast-date">Day 1</h4>
+              <div class="info">
+                <img class='weather_code_image' width="45" height="45" src="./images/sun.png" alt="weather code image" >
+                <h5 class="text-center weather_code_description">Weather</h5>
+                <div class="temp">
+                  <h3 class="weather_temp">°C</h3>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div id="forecast-2" class="weather forecast day+3">
+            <div class="main">
+              <h4 class="forecast-date">Day 1</h4>
+              <div class="info">
+                <img class='weather_code_image' width="45" height="45" src="./images/sun.png" alt="weather code image" >
+                <h5 class="text-center weather_code_description">Weather</h5>
+                <div class="temp">
+                  <h3 class="weather_temp">°C</h3>
+                </div>
+              </div>
+            </div> 
+          </div>
+
         </div>
       </section>
       <section id="sect9" class="">
-        <h2>Distinguished Members</h2>
+        <h2>Spotlight - Distinguished Members</h2>
         <div id="memberspro" class="grid-3">
             
         </div>
